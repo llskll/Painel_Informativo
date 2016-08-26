@@ -1,0 +1,255 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{0D0E1C59-1D82-43BE-A3EB-46B5788DD4B7}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>CamadaInterface</RootNamespace>
+    <AssemblyName>CamadaInterface</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>4.0</OldToolsVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="CadastroCurso.aspx" />
+    <Content Include="CadastroDisciplina.aspx" />
+    <Content Include="CadastroFuncionario.aspx" />
+    <Content Include="CadastroSala.aspx" />
+    <Content Include="CadastroTurma.aspx" />
+    <Content Include="Consultar_Alterar_Exluir.aspx" />
+    <Content Include="Default.aspx" />
+    <Content Include="imagens2\esquecersenha3.jpg" />
+    <Content Include="imagens2\excluir.gif" />
+    <Content Include="imagens2\SYSO202.jpg" />
+    <Content Include="imagens2\Copy of SysoLogo3.jpg" />
+    <Content Include="imagens2\Copy of SysoLogo2.jpg" />
+    <Content Include="imagens2\SYSO201.jpg" />
+    <Content Include="imagens2\Sysoimg%28Atualizado%29.jpg" />
+    <Content Include="imagens2\SysoLogo2.jpg" />
+    <Content Include="images\arrow.gif" />
+    <Content Include="images\arrow1.gif" />
+    <Content Include="images\arrow2.gif" />
+    <Content Include="images\arrow3.gif" />
+    <Content Include="images\arrow4.gif" />
+    <Content Include="images\blank.gif" />
+    <Content Include="images\body-bottombg.gif" />
+    <Content Include="images\botton.gif" />
+    <Content Include="images\botton2.gif" />
+    <Content Include="images\css-normal.gif" />
+    <Content Include="images\doted-line.gif" />
+    <Content Include="images\form1-bg.gif" />
+    <Content Include="images\form2-bg.gif" />
+    <Content Include="images\icon1.jpg" />
+    <Content Include="images\icon2.jpg" />
+    <Content Include="images\icon3.gif" />
+    <Content Include="images\image1.jpg" />
+    <Content Include="images\image2.gif" />
+    <Content Include="images\logo.gif" />
+    <Content Include="images\member-bg.gif" />
+    <Content Include="images\menu-bg.gif" />
+    <Content Include="images\rss_icon.png" />
+    <Content Include="images\SysoLogo2.jpg" />
+    <Content Include="images\templatemo_ads.jpg" />
+    <Content Include="images\templatemo_body_bg.jpg" />
+    <Content Include="images\templatemo_content_bg.jpg" />
+    <Content Include="images\templatemo_content_bottombg.jpg" />
+    <Content Include="images\templatemo_image_01.jpg" />
+    <Content Include="images\templatemo_image_02.jpg" />
+    <Content Include="images\templatemo_menu_bg.jpg" />
+    <Content Include="images\_post_bg.jpg" />
+    <Content Include="images\templatemo_post_bg_bottom4.jpg" />
+    <Content Include="images\templatemo_post_header_bg.jpg" />
+    <Content Include="images\toppan-bg.jpg" />
+    <Content Include="images\twitter_icon.png" />
+    <Content Include="images\xhtml-normal.gif" />
+    <Content Include="OpcaoDeConta.aspx" />
+    <Content Include="templatemo_style.css" />
+    <Content Include="Usuario.aspx" />
+    <Content Include="VerPainel.aspx" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CadastroCurso.aspx.cs">
+      <DependentUpon>CadastroCurso.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CadastroCurso.aspx.designer.cs">
+      <DependentUpon>CadastroCurso.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CadastroDisciplina.aspx.cs">
+      <DependentUpon>CadastroDisciplina.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CadastroDisciplina.aspx.designer.cs">
+      <DependentUpon>CadastroDisciplina.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CadastroFuncionario.aspx.cs">
+      <DependentUpon>CadastroFuncionario.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CadastroFuncionario.aspx.designer.cs">
+      <DependentUpon>CadastroFuncionario.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CadastroSala.aspx.cs">
+      <DependentUpon>CadastroSala.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CadastroSala.aspx.designer.cs">
+      <DependentUpon>CadastroSala.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CadastroTurma.aspx.cs">
+      <DependentUpon>CadastroTurma.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CadastroTurma.aspx.designer.cs">
+      <DependentUpon>CadastroTurma.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Consultar_Alterar_Exluir.aspx.cs">
+      <DependentUpon>Consultar_Alterar_Exluir.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Consultar_Alterar_Exluir.aspx.designer.cs">
+      <DependentUpon>Consultar_Alterar_Exluir.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="OpcaoDeConta.aspx.cs">
+      <DependentUpon>OpcaoDeConta.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="OpcaoDeConta.aspx.designer.cs">
+      <DependentUpon>OpcaoDeConta.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PainelVO.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Site1.Master.cs">
+      <DependentUpon>Site1.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Site1.Master.designer.cs">
+      <DependentUpon>Site1.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Usuario.aspx.cs">
+      <DependentUpon>Usuario.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Usuario.aspx.designer.cs">
+      <DependentUpon>Usuario.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="VerPainel.aspx.cs">
+      <DependentUpon>VerPainel.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="VerPainel.aspx.designer.cs">
+      <DependentUpon>VerPainel.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Site1.Master" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CamadaDados\CamadaDados.csproj">
+      <Project>{25B54E5F-65D6-4A39-B432-75DC0950F0E2}</Project>
+      <Name>CamadaDados</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CamadaMetaDado\CamadaMetaDado.csproj">
+      <Project>{B391D812-34BB-4DF8-9FEE-3A8A70932C1B}</Project>
+      <Name>CamadaMetaDado</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CamadaNegocio\CamadaNegocio.csproj">
+      <Project>{0DADA5F1-0A2A-453B-A5DD-DC6AE740105F}</Project>
+      <Name>CamadaNegocio</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>53862</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

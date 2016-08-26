@@ -1,0 +1,161 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="CamadaInterface.Site1" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>SYSO - Painel Informativo</title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+        <meta name="keywords" content="SYSO - Painel Informativo" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="description" content="SYSO - Painel Informativo" />
+        <link href="templatemo_style.css" rel="stylesheet" type="text/css" />
+    <script language="javascript" type="text/javascript">
+        function clearText(field) {
+            if (field.defaultValue == field.value) field.value = '';
+            else if (field.value == '') field.value = field.defaultValue;
+        }
+    </script>
+    </asp:ContentPlaceHolder>
+
+
+
+
+
+
+
+    <style type="text/css">
+        .style1
+        {
+            width: 875px;
+            height: 127px;
+        }
+    </style>
+
+
+
+
+
+
+
+</head>
+<body>
+    <form id="form1" runat="server">
+<div id="templatemo_banner_wrapper">
+	<div id="templatemo_banner">
+    	<div id="site_title">
+            <img alt="lOGO" class="style1" src="imagens2/Sysoimg(Atualizado).jpg" /></div>
+  </div> <!-- end of banner -->
+</div><!-- end of banner wrapper -->
+
+<div id="templatemo_menu_wrapper">   
+    
+    <div id="templatemo_menu">
+
+        <%--<ul>
+            <li><a href="#" class="current">Início </a>
+            <li><a href="#" >Cadastrar Painel</a></li>
+            <li><a href="#">Alterar/Excluir</a></li>
+            <li><a href="#">Opções de Conta</a></li>
+            
+        </ul>--%>  
+          	
+        <asp:Menu ID="Menu1" runat="server" >
+            <DynamicMenuItemStyle Font-Size="Small" />
+            <Items>
+                <asp:MenuItem Text="Inicio" Value="Inicio" NavigateUrl="~/VerPainel.aspx"></asp:MenuItem>
+                <asp:MenuItem Text="Sala" Value="Sala" NavigateUrl="~/CadastroSala.aspx">
+                </asp:MenuItem>
+                <asp:MenuItem Text="Turma" Value="Turma" NavigateUrl="~/CadastroTurma.aspx">
+                </asp:MenuItem>
+                <asp:MenuItem Text="Curso" Value="Curso" NavigateUrl="~/CadastroCurso.aspx">
+                </asp:MenuItem>
+                <asp:MenuItem Text="Disciplina" Value="Disciplina" 
+                    NavigateUrl="~/CadastroDisciplina.aspx">
+                </asp:MenuItem>
+                <asp:MenuItem Text="Funcionário" Value="Funcionario" 
+                    NavigateUrl="~/CadastroFuncionario.aspx">
+                </asp:MenuItem>
+                <asp:MenuItem Text="Painel" Value="Painel" NavigateUrl="~/Default.aspx">
+                </asp:MenuItem>
+                <asp:MenuItem Text="Administrar Painel" Value="Opções de Conta" 
+                    NavigateUrl="~/Consultar_Alterar_Exluir.aspx"></asp:MenuItem>
+            </Items>
+            <StaticMenuItemStyle Font-Names="Verdana" Font-Size="Large" 
+                HorizontalPadding="9px" VerticalPadding="8px" />
+        </asp:Menu>
+    </div> <!-- end of menu -->
+</div> <!-- end of menu wrapper -->
+
+<div id="templatemo_content">
+	
+   	<div id="column_w540">
+    
+    	<div class="post_section">
+    	  <div class="templatemo_post_content">
+   	      <p>
+          <asp:contentplaceholder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:contentplaceholder></p>
+<div class="margin_bottom_10"></div>
+    	  </div>
+            
+          <div class="cleaner"></div>
+           <div class="post_section_bottom"></div>
+        </div>
+    	<div class="cleaner"></div>
+    </div>
+    
+    <div id="side_column_wrapper">
+        <div id="side_column">
+                
+                <div class="section_w260" align="center">
+                	<div class="ads_125_125 margin_right_10">
+                        Matricula:
+                        <asp:Label ID="Label1" runat="server"></asp:Label>
+                        <br />
+                        <br />
+                        <br />
+                        <asp:LinkButton ID="LinkButtonOpcoesDeConta" runat="server" ForeColor="#0066FF" 
+                            onclick="LinkButtonOpcoesDeConta_Click">Opções de Conta</asp:LinkButton>
+                        <br />
+                        <br />
+                        <asp:LinkButton ID="LinkButton1" runat="server" ForeColor="#0066FF" 
+                            onclick="LinkButton1_Click">Deslogar</asp:LinkButton>
+                        <br />
+                        <br />
+                        </div>
+                	<div class="cleaner"></div>
+                </div>
+            <div class="cleaner"></div>
+        </div> <!-- end of side column -->
+        </div>
+		
+	<div class="margin_bottom_20"></div>
+	<div id="bottom"></div>   
+</div> <!-- end of content -->
+
+<div id="templatemo_footer">
+
+    <div class="section_w220">
+        <div class="header_03">Links interessantes</div>
+        <ul class="footer_menu_list">
+            <li><a href="#">Quadro de horario</a></li>
+            <li><a href="#">Material didático</a></li>
+            <li><a href="#">Firjan</a></li>
+            <li></li>               
+        </ul>
+    </div>
+    <div class="section_w220">
+      <ul class="footer_menu_list">
+    <li></li>                
+        </ul>
+    </div>
+<div class="margin_bottom_30"></div>
+    Projeto Final: Turma 2011018 <a href="#" target="_parent">SYSO</a> | Designed by <a href="#" target="_parent">
+    SYSO - Painel Informativo</a>  
+    <div class="cleaner"></div>
+</div> <!-- end of footer -->
+    </form>
+</body>
+</html>
