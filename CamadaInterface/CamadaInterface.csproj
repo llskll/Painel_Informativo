@@ -19,6 +19,12 @@
     <UpgradeBackupLocation>
     </UpgradeBackupLocation>
     <OldToolsVersion>4.0</OldToolsVersion>
+    <UseIISExpress>false</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -63,11 +69,11 @@
     <Content Include="CadastroTurma.aspx" />
     <Content Include="Consultar_Alterar_Exluir.aspx" />
     <Content Include="Default.aspx" />
+    <Content Include="imagens2\Copy of SysoLogo2.jpg" />
     <Content Include="imagens2\esquecersenha3.jpg" />
     <Content Include="imagens2\excluir.gif" />
     <Content Include="imagens2\SYSO202.jpg" />
     <Content Include="imagens2\Copy of SysoLogo3.jpg" />
-    <Content Include="imagens2\Copy of SysoLogo2.jpg" />
     <Content Include="imagens2\SYSO201.jpg" />
     <Content Include="imagens2\Sysoimg%28Atualizado%29.jpg" />
     <Content Include="imagens2\SysoLogo2.jpg" />
@@ -218,6 +224,9 @@
       <Project>{0DADA5F1-0A2A-453B-A5DD-DC6AE740105F}</Project>
       <Name>CamadaNegocio</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\PublishProfiles\llskll.pubxml" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

@@ -310,5 +310,9 @@ namespace CamadaInterface
             
         }
 
+        protected void DropDownListTipoDeUsuario_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
